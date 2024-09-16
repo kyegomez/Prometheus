@@ -97,6 +97,48 @@ Here are a few examples of what you can create with Prometheus:
 - A **blue-scaled dragon** with the ability to produce fire through chemical reactions in its glands.
 - An **elephant-sized turtle** that moves with surprising speed.
 
+
+## Datasets
+
+There are a few existing datasets and resources that are relevant for **Phenotype-Genotype Translation**—mapping phenotypic traits to corresponding genetic markers. These datasets often come from fields like genomics, agriculture, and medical research, where researchers investigate the relationships between genes and observable traits. Here are some notable examples:
+
+### 1. **GWAS Catalog (Genome-Wide Association Studies)**
+   - **Description**: A catalog of published genome-wide association studies that link specific genetic variants with traits and diseases.
+   - **Data**: Provides associations between phenotypic traits (e.g., height, pigmentation) and genetic markers (SNPs).
+   - **Link**: [GWAS Catalog](https://www.ebi.ac.uk/gwas/)
+   
+### 2. **dbGaP (Database of Genotypes and Phenotypes)**
+   - **Description**: Hosted by the National Institutes of Health (NIH), dbGaP provides access to datasets that integrate genotype and phenotype data, particularly in the context of medical research.
+   - **Data**: Covers a range of diseases and traits, providing both genetic data (e.g., SNPs, mutations) and associated phenotypic data (e.g., physical traits, behavior).
+   - **Link**: [dbGaP](https://www.ncbi.nlm.nih.gov/gap)
+   
+### 3. **UK Biobank**
+   - **Description**: A large-scale biomedical database containing in-depth genetic and health information from half a million UK participants.
+   - **Data**: Includes extensive phenotypic traits (e.g., pigmentation, body structure) and genotype data. Particularly useful for studies on genetic markers linked to phenotypic traits.
+   - **Link**: [UK Biobank](https://www.ukbiobank.ac.uk/)
+
+### 4. **1000 Genomes Project**
+   - **Description**: This project aimed to create the most detailed catalog of human genetic variation, including SNPs, structural variants, and their linkage to phenotypic traits.
+   - **Data**: Provides genomic data from various human populations, with some links to phenotypic information such as pigmentation, ancestry, etc.
+   - **Link**: [1000 Genomes Project](https://www.internationalgenome.org/)
+
+### 5. **Mouse Phenome Database (MPD)**
+   - **Description**: A resource for phenotypic and genotypic data on mouse strains, often used as models for human disease and genetic research.
+   - **Data**: Provides a variety of phenotypic traits in mice (e.g., behavior, pigmentation, muscle growth) linked to genetic markers.
+   - **Link**: [Mouse Phenome Database](https://phenome.jax.org/)
+
+### 6. **Human Phenotype Ontology (HPO)**
+   - **Description**: HPO provides a standardized vocabulary of phenotypic abnormalities encountered in human disease and links them to genes and mutations.
+   - **Data**: Phenotypic traits connected to genetic markers, often in the context of rare genetic disorders.
+   - **Link**: [HPO](https://hpo.jax.org/app/)
+
+### 7. **The Animal QTLdb**
+   - **Description**: This database compiles quantitative trait loci (QTL) data for livestock species, which link genotype to phenotypic traits such as muscle growth, behavior, and more.
+   - **Data**: Includes genotypic data and phenotypic traits, focusing on agricultural animals like pigs, cattle, and chickens.
+   - **Link**: [Animal QTLdb](https://www.animalgenome.org/QTLdb/)
+
+These datasets can help identify genetic markers responsible for phenotypic traits and behaviors across different species, including humans and animals. For deep learning or machine learning applications, you can often combine data from these resources to create models that predict phenotypes based on genotypic data.
+
 ---
 
 ## 💡 Future Plans
