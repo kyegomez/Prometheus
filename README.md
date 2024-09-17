@@ -141,7 +141,7 @@ These datasets can help identify genetic markers responsible for phenotypic trai
 
 ---
 
-# Translating Gene logits into an animal
+## Translating Gene logits into an animal
 To translate the outputted gene sequences from a model like Prometheus into a real, living organism involves multiple advanced stages of synthetic biology, genetics, and biotechnology. Here's a breakdown of how it would be theoretically possible to take those generated gene expressions and create an actual lifeform:
 
 ### 1. **Gene Synthesis**
@@ -215,3 +215,12 @@ Connect with fellow bioengineers and enthusiasts in the **Prometheus** community
 - [Twitter](https://twitter.com/prometheus_ai)
 - [GitHub Discussions](https://github.com/yourusername/prometheus/discussions)
 
+
+# Todo
+
+- [ ] Text Tokenization
+- [ ] Genomic embedding input
+- [ ] Merge layer where we merge the pheno type features and the genomic type features maybe with an linear, and then mlp or something or concat or attention
+- [ ] Output head that generates the genomes, we need to detokenize billions of pairs at once
+- [ ] Create a single masssive dataset of all the phenotypes mapped to genomic types and put it on hugginface
+- [ ] Create the script to train this behemoth on this dataset
