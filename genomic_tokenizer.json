@@ -1,0 +1,250 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[MASK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[START]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "[END]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 5,
+      "content": "[SNP]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 6,
+      "content": "[INS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 7,
+      "content": "[DEL]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": {
+    "type": "TemplateProcessing",
+    "single": [
+      {
+        "SpecialToken": {
+          "id": "[START]",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "SpecialToken": {
+          "id": "[END]",
+          "type_id": 0
+        }
+      }
+    ],
+    "pair": [
+      {
+        "SpecialToken": {
+          "id": "[START]",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "A",
+          "type_id": 0
+        }
+      },
+      {
+        "Sequence": {
+          "id": "B",
+          "type_id": 0
+        }
+      },
+      {
+        "SpecialToken": {
+          "id": "[END]",
+          "type_id": 0
+        }
+      }
+    ],
+    "special_tokens": {
+      "[END]": {
+        "id": "[END]",
+        "ids": [
+          2
+        ],
+        "tokens": [
+          "[END]"
+        ]
+      },
+      "[START]": {
+        "id": "[START]",
+        "ids": [
+          1
+        ],
+        "tokens": [
+          "[START]"
+        ]
+      }
+    }
+  },
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": null,
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "[UNK]": 0,
+      "[PAD]": 1,
+      "[MASK]": 2,
+      "[START]": 3,
+      "[END]": 4,
+      "[SNP]": 5,
+      "[INS]": 6,
+      "[DEL]": 7,
+      "A": 8,
+      "C": 9,
+      "G": 10,
+      "N": 11,
+      "T": 12,
+      "AT": 13,
+      "GG": 14,
+      "CT": 15,
+      "CG": 16,
+      "ATG": 17,
+      "NN": 18,
+      "TT": 19,
+      "AG": 20,
+      "ACG": 21,
+      "AATG": 22,
+      "CGG": 23,
+      "GA": 24,
+      "NCT": 25,
+      "TGG": 26,
+      "TACG": 27,
+      "TGA": 28,
+      "ATCT": 29,
+      "ATAATG": 30,
+      "ATTGG": 31,
+      "GGGG": 32,
+      "CTCT": 33,
+      "CGTACG": 34,
+      "CGATAATG": 35,
+      "ATGNN": 36,
+      "ATGCGTACG": 37,
+      "TTT": 38,
+      "CGGG": 39,
+      "NCTAG": 40,
+      "ATCTCGATAATG": 41,
+      "ATTGGCTCT": 42,
+      "GGGGATCTCGATAATG": 43,
+      "ATGNNNCTAG": 44,
+      "ATGCGTACGTTT": 45,
+      "ATTGGCTCTTGA": 46,
+      "GGGGATCTCGATAATGCGGG": 47
+    },
+    "merges": [
+      "A T",
+      "G G",
+      "C T",
+      "C G",
+      "AT G",
+      "N N",
+      "T T",
+      "A G",
+      "A CG",
+      "A ATG",
+      "C GG",
+      "G A",
+      "N CT",
+      "T GG",
+      "T ACG",
+      "T GA",
+      "AT CT",
+      "AT AATG",
+      "AT TGG",
+      "GG GG",
+      "CT CT",
+      "CG TACG",
+      "CG ATAATG",
+      "ATG NN",
+      "ATG CGTACG",
+      "TT T",
+      "CGG G",
+      "NCT AG",
+      "ATCT CGATAATG",
+      "ATTGG CTCT",
+      "GGGG ATCTCGATAATG",
+      "ATGNN NCTAG",
+      "ATGCGTACG TTT",
+      "ATTGGCTCT TGA",
+      "GGGGATCTCGATAATG CGGG"
+    ]
+  }
+}
